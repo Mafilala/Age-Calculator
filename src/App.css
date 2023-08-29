@@ -1,0 +1,68 @@
+@import "./sharedCss.css";
+
+.ageCalculator {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  max-width: 840px;
+  width: 65vw;
+  max-height: 650px;
+  background-color: var(--White);
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 170px;
+}
+.separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.line1 {
+  height: 1px;
+  width: 90%;
+  background-color: gray;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  background: url("./assets/images/icon-arrow.svg");
+  background-color: var(--Purple-primary);
+  background-position: center;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1000px) and (min-width: 750px) {
+  .icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 500px) {
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ageCalculator {
+    border-bottom-right-radius: 100px;
+    min-width: 375px;
+    padding: 25px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .icon {
+    width: 100px;
+    height: 100px;
+    top: 35px;
+    left: 50%;
+  }
+  .line1,
+  .line2 {
+    height: 1px;
+    width: 40%;
+    background-color: gray;
+  }
+}

@@ -1,0 +1,7 @@
+@import "../../sharedCss.css";
+
+.date_input {
+  display: flex;
+  gap: 20px;
+  font-weight: 800;
+}

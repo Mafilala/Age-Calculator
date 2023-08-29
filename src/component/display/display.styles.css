@@ -1,0 +1,29 @@
+@import "../../sharedCss.css";
+
+.age-viewer h2 {
+  font-size: 80px;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+.age-viewer span {
+  color: var(--Purple-primary);
+}
+
+@media (max-width: 1000px) and (min-width: 750px) {
+  .age-viewer h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 500px) {
+  .age-viewer h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .age-viewer h2 {
+    font-size: 58px;
+  }
+}
